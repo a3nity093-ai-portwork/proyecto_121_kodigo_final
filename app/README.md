@@ -19,6 +19,12 @@ model/modelo_riesgo.joblib
 
 Si el modelo todavía no existe, la interfaz arranca y muestra el error correspondiente, pero no genera probabilidades.
 
+## Modelo de prueba
+```powershell
+$env:OLIST_MODELO_PATH = "model\modelo_riesgo.prueba.joblib"
+.\.venv\Scripts\python.exe -m streamlit run app\app.py
+```
+
 ## Funciones
 
 - Predicción individual.

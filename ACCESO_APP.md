@@ -47,7 +47,7 @@ Configura la URL:
 
 ```toml
 modo_inferencia = "api"
-api_url = "https://TU-API.onrender.com"
+api_url = ""
 ```
 
 La app envía:
@@ -67,4 +67,3 @@ Respuesta mínima esperada:
 
 También se acepta una probabilidad entre 0 y 100.
 
-No hay API propia en este repositorio todavía; la app solo puede consumir una API externa cuando exista y esté configurada.

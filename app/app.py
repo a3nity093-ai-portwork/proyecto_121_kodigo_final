@@ -66,7 +66,7 @@ def barra_lateral(
     with st.sidebar:
         st.subheader("Estado de la app")
         if motor is not None:
-            st.success("Inferencia disponible", icon="✅")
+            st.success("Inferencia disponible")
             st.caption(f"Camino: {motor.descripcion}")
         else:
             st.error("Inferencia no disponible", icon="⛔")

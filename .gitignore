@@ -8,4 +8,7 @@ __pycache__/
 # Secretos
 **/.streamlit/secrets.toml
 
+# Test
+/app/tests/
+
 priorizacion_riesgo_*.csv
