@@ -1,0 +1,11 @@
+# Entorno local
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secretos
+**/.streamlit/secrets.toml
+
+priorizacion_riesgo_*.csv
