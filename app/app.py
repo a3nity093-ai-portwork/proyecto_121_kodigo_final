@@ -29,7 +29,7 @@ CONTRACT = [
 ]
 
 
-DEFAULT_API_URL = "http://localhost:8000"
+DEFAULT_API_URL = "https://proyecto-121-kodigo-final.onrender.com/"
 
 
 def api_url() -> str:
