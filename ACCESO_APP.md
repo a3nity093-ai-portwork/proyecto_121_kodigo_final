@@ -27,7 +27,7 @@ Pruebas:
 | :--- | :--- |
 | App | `app/app.py` |
 | Modelo local | `model/modelo_riesgo.joblib` |
-| Configuración API | `app/.streamlit/secrets.toml` |
+| Configuración API | Panel lateral de la app |
 | CSV de ejemplo | `app/datos/ejemplo_pedidos.csv` |
 | Ficha del modelo | `app/ficha_modelo.md` |
 
@@ -43,12 +43,15 @@ model/modelo_riesgo.joblib
 
 ### API externa
 
-Configura la URL:
+Escribe la URL base de la API directamente en el panel lateral de la app.
+Ejemplos:
 
-```toml
-modo_inferencia = "api"
-api_url = ""
+```text
+http://localhost:8000
+https://TU-API.onrender.com
 ```
+
+No agregues `/riesgo` al final: la app lo agrega automáticamente.
 
 La app envía:
 
@@ -65,5 +68,5 @@ Respuesta mínima esperada:
 {"probabilidad": 0.37}
 ```
 
-También se acepta una probabilidad entre 0 y 100.
-
+La app también muestra el umbral usado por la API, el estado `riesgo_alto` y la
+respuesta JSON completa.
